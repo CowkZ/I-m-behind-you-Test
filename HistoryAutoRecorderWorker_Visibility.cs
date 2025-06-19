@@ -7,8 +7,8 @@ namespace Im_behind_you
     {
         public override float PullRecord()
         {
-            Log.Message("[I'm behind you] DEBUG: Sistema do gráfico pediu o valor da visibilidade.");
-            return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
+            // VAMOS IGNORAR O CÁLCULO REAL E RETORNAR UM NÚMERO GIGANTE APENAS PARA O TESTE
+            return 50000f; // Retorna um valor fixo de 50,000
         }
     }
 }
