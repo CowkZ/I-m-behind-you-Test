@@ -11,7 +11,7 @@ namespace Im_behind_you
         public static float CalculateBaseTileVisibility(int tile)
         {
             float locationFactor = 0f;
-            // Trocamos FactionBase por Settlement
+
             foreach (var settlement in Find.WorldObjects.AllWorldObjects.OfType<Settlement>())
             {
                 if (settlement.Faction == Faction.OfPlayer) continue;
@@ -24,10 +24,9 @@ namespace Im_behind_you
             }
             return locationFactor;
         }
-        // ADICIONE ESTE NOVO MÉTODO
+
         public static float GetCurrentColonyVisibility()
         {
-            // Acessa o GameComponent e retorna a pontuação de visibilidade atual
             return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
         }
     }
