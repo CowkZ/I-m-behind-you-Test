@@ -3,6 +3,7 @@
   <HistoryAutoRecorderDef>
     <defName>Visibility</defName>
     <label>Visibilidade</label>
-    <graphColor>(0.8, 0.8, 0.2)</graphColor> <historyRecorderClass>Im_behind_you.HistoryRecorder_Visibility</historyRecorderClass>
+    <graphColor>(0.8, 0.8, 0.2)</graphColor>
+    <workerClass>Im_behind_you.HistoryAutoRecorderWorker_Visibility</workerClass>
   </HistoryAutoRecorderDef>
 </Defs>

@@ -49,7 +49,7 @@
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.6.4494-beta, )"
+              "version": "[1.6.4495-beta, )"
             },
             "Lib.Harmony": {
               "target": "Package",

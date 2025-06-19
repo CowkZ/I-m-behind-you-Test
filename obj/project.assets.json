@@ -2,12 +2,11 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Krafs.Rimworld.Ref/1.6.4494-beta": {
+      "Krafs.Rimworld.Ref/1.6.4495-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
-          "ref/net472/Assembly-CSharp_publicised.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
@@ -129,12 +128,11 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Krafs.Rimworld.Ref/1.6.4494-beta": {
+      "Krafs.Rimworld.Ref/1.6.4495-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
-          "ref/net472/Assembly-CSharp_publicised.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
@@ -256,12 +254,11 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-arm64": {
-      "Krafs.Rimworld.Ref/1.6.4494-beta": {
+      "Krafs.Rimworld.Ref/1.6.4495-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
-          "ref/net472/Assembly-CSharp_publicised.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
@@ -383,12 +380,11 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Krafs.Rimworld.Ref/1.6.4494-beta": {
+      "Krafs.Rimworld.Ref/1.6.4495-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
-          "ref/net472/Assembly-CSharp_publicised.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
@@ -510,12 +506,11 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Krafs.Rimworld.Ref/1.6.4494-beta": {
+      "Krafs.Rimworld.Ref/1.6.4495-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
-          "ref/net472/Assembly-CSharp_publicised.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
@@ -638,22 +633,20 @@
     }
   },
   "libraries": {
-    "Krafs.Rimworld.Ref/1.6.4494-beta": {
-      "sha512": "kadqhVh4J05+jg7DfIG9SI/yje0fj0kaqWKjXkn2wPJMHNuil3aRorPJ+f7BA/hB8dvqWw4aiNoEh/tDfz8Ssg==",
+    "Krafs.Rimworld.Ref/1.6.4495-beta": {
+      "sha512": "RcpMybAF1iaPuYbt86Qwc2IHU9ajUO2h8anYwTrGuVEBSB6dVCoWxATDRvmEec4qtIkyWw+1Qmq/VSWiklZFkA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.6.4494-beta",
+      "path": "krafs.rimworld.ref/1.6.4495-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.6.4494-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.6.4495-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
-        "ref/net472/Assembly-CSharp_hash.hash",
-        "ref/net472/Assembly-CSharp_publicised.dll",
         "ref/net472/ISharpZipLib.dll",
         "ref/net472/Mono.Security.dll",
         "ref/net472/NAudio.dll",
@@ -811,7 +804,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Krafs.Rimworld.Ref >= 1.6.4494-beta",
+      "Krafs.Rimworld.Ref >= 1.6.4495-beta",
       "Lib.Harmony >= 2.3.6"
     ]
   },
@@ -864,7 +857,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.6.4494-beta, )"
+            "version": "[1.6.4495-beta, )"
           },
           "Lib.Harmony": {
             "target": "Package",

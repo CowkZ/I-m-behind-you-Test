@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J74ipniTC9E=",
+  "dgSpecHash": "nC27jrN1OvE=",
   "success": true,
   "projectFilePath": "E:\\Projetos Visual stduio\\I-m-behind-you\\I'm behind you.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cowkz\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4494-beta\\krafs.rimworld.ref.1.6.4494-beta.nupkg.sha512",
+    "C:\\Users\\cowkz\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4495-beta\\krafs.rimworld.ref.1.6.4495-beta.nupkg.sha512",
     "C:\\Users\\cowkz\\.nuget\\packages\\lib.harmony\\2.3.6\\lib.harmony.2.3.6.nupkg.sha512"
   ],
   "logs": []
