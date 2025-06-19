@@ -1,7 +1,8 @@
 ﻿using RimWorld;
+using System.Linq;
 using Verse;
 
-namespace SeuModDeVisibilidade
+namespace I_m_behind_you
 {
     public class VisibilityTracker : GameComponent
     {
@@ -33,7 +34,7 @@ namespace SeuModDeVisibilidade
             if (Current.Game.CurrentMap != null) // Garante que há um mapa ativo
             {
                 float wealthFactor = Current.Game.CurrentMap.wealthWatcher.WealthTotal / 1000f;
-                float populationFactor = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.Count() * 10;
+                float populationFactor = PawnsFinder.AllMaps_FreeColonists.Count() * 10;
                 visibilityScore = wealthFactor + populationFactor;
             }
         }
