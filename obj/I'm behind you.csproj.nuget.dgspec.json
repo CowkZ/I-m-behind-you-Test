@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos Visual stduio\\I'm behind you\\I'm behind you.csproj": {}
+    "E:\\Projetos Visual stduio\\I-m-behind-you\\I'm behind you.csproj": {}
   },
   "projects": {
-    "E:\\Projetos Visual stduio\\I'm behind you\\I'm behind you.csproj": {
+    "E:\\Projetos Visual stduio\\I-m-behind-you\\I'm behind you.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos Visual stduio\\I'm behind you\\I'm behind you.csproj",
+        "projectUniqueName": "E:\\Projetos Visual stduio\\I-m-behind-you\\I'm behind you.csproj",
         "projectName": "I'm behind you",
-        "projectPath": "E:\\Projetos Visual stduio\\I'm behind you\\I'm behind you.csproj",
+        "projectPath": "E:\\Projetos Visual stduio\\I-m-behind-you\\I'm behind you.csproj",
         "packagesPath": "C:\\Users\\cowkz\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos Visual stduio\\I'm behind you\\obj\\",
+        "outputPath": "E:\\Projetos Visual stduio\\I-m-behind-you\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
@@ -44,6 +44,10 @@
       "frameworks": {
         "net472": {
           "dependencies": {
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.6.4494-beta, )"
+            },
             "Lib.Harmony": {
               "target": "Package",
               "version": "[2.3.6, )"
