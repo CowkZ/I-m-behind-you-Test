@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Projetos Visual stduio\\I-m-behind-you\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\patch_traders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_traders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\patch_raids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_raids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\visibilitycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:visibilitycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\historyautorecorderworker_visibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:historyautorecorderworker_visibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\patch_traders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_traders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\patch_raids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_raids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Main.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
@@ -59,12 +59,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "VisibilityCalculator.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityCalculator.cs",
               "RelativeDocumentMoniker": "VisibilityCalculator.cs",
-              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityCalculator.cs*",
-              "RelativeToolTip": "VisibilityCalculator.cs*",
+              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityCalculator.cs",
+              "RelativeToolTip": "VisibilityCalculator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T20:20:17.91Z",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Patch_Page_SelectStartingSite.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Page_SelectStartingSite.cs",
               "RelativeDocumentMoniker": "Patch_Page_SelectStartingSite.cs",
@@ -85,20 +85,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Patch_Traders.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Traders.cs",
               "RelativeDocumentMoniker": "Patch_Traders.cs",
               "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Traders.cs",
               "RelativeToolTip": "Patch_Traders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T16:39:58.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Patch_Raids.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Raids.cs",
               "RelativeDocumentMoniker": "Patch_Raids.cs",
@@ -111,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VisibilityTracker.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityTracker.cs",
               "RelativeDocumentMoniker": "VisibilityTracker.cs",
@@ -124,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "HistoryAutoRecorderWorker_Visibility.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\HistoryAutoRecorderWorker_Visibility.cs",
               "RelativeDocumentMoniker": "HistoryAutoRecorderWorker_Visibility.cs",

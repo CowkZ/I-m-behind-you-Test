@@ -1,21 +1,36 @@
 ﻿using HarmonyLib;
-using I_m_behind_you;
-using Im_behind_you;
 using RimWorld;
 using Verse;
+using System; // Adicionado para usar a classe Type
 
-[HarmonyPatch(typeof(IncidentWorker_TraderCaravanArrival), "CanFireNow")]
-public static class Patch_Traders
+namespace Im_behind_you
 {
-    // Se este método retornar 'false', o evento é cancelado
-    public static bool Prefix(ref bool __result)
+    // Tornamos o patch explícito, especificando os parâmetros do método alvo
+    [HarmonyPatch(typeof(IncidentWorker_TraderCaravanArrival))]
+    [HarmonyPatch("CanFireNow")]
+    [HarmonyPatch(new Type[] { typeof(IncidentParms) })]
+    public static class Patch_Traders
     {
-        var visibilityTracker = Current.Game.GetComponent<VisibilityTracker>();
-        if (visibilityTracker != null && visibilityTracker.visibilityScore < 100) // Exemplo de limite
+        // Adicionamos o parâmetro 'IncidentParms parms' para corresponder ao método original
+        public static bool Prefix(IncidentParms parms, ref bool __result)
         {
-            __result = false; // Define o resultado como falso
-            return false; // Impede o método original de rodar
+            var visibilityTracker = Current.Game.GetComponent<VisibilityTracker>();
+
+            // Exemplo de limite: se a visibilidade for menor que 100, há uma chance de o evento não ocorrer
+            if (visibilityTracker != null && visibilityTracker.visibilityScore < 100)
+            {
+                // Gera um número aleatório. Se for maior que a visibilidade, o evento falha.
+                // Ex: Visibilidade 20 -> 80% de chance de falhar. Visibilidade 80 -> 20% de chance de falhar.
+                if (Rand.Range(0f, 100f) > visibilityTracker.visibilityScore)
+                {
+                    // Define o resultado do método original como 'false' e impede que ele rode
+                    __result = false;
+                    return false;
+                }
+            }
+
+            // Se a visibilidade for alta ou se o teste aleatório passar, permite que o evento ocorra normalmente
+            return true;
         }
-        return true; // Permite que o método original continue
     }
 }
