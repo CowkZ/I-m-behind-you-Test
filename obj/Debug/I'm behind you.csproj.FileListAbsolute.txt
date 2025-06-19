@@ -1,0 +1,10 @@
+E:\Projetos Visual stduio\I-m-behind-you\mods\I'm behind you\1.6\Assemblies\I'm behind you.dll.config
+E:\Projetos Visual stduio\I-m-behind-you\mods\I'm behind you\1.6\Assemblies\I'm behind you.dll
+E:\Projetos Visual stduio\I-m-behind-you\mods\I'm behind you\1.6\Assemblies\I'm behind you.pdb
+E:\Projetos Visual stduio\I-m-behind-you\mods\I'm behind you\1.6\Assemblies\0Harmony.dll
+E:\Projetos Visual stduio\I-m-behind-you\mods\I'm behind you\1.6\Assemblies\0Harmony.pdb
+E:\Projetos Visual stduio\I-m-behind-you\obj\Debug\I'm behind you.csproj.AssemblyReference.cache
+E:\Projetos Visual stduio\I-m-behind-you\obj\Debug\I'm behind you.csproj.CoreCompileInputs.cache
+E:\Projetos Visual stduio\I-m-behind-you\obj\Debug\I'm behi.2377A3B4.Up2Date
+E:\Projetos Visual stduio\I-m-behind-you\obj\Debug\I'm behind you.dll
+E:\Projetos Visual stduio\I-m-behind-you\obj\Debug\I'm behind you.pdb

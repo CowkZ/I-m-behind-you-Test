@@ -1,5 +1,7 @@
-﻿using RimWorld;
+﻿using I_m_behind_you;
+using RimWorld;
 using RimWorld.Planet;
+using System.Linq;
 using Verse;
 
 namespace Im_behind_you
@@ -9,16 +11,24 @@ namespace Im_behind_you
         public static float CalculateBaseTileVisibility(int tile)
         {
             float locationFactor = 0f;
-            foreach (var factionBase in Find.WorldObjects.FactionBases)
+            // Trocamos FactionBase por Settlement
+            foreach (var settlement in Find.WorldObjects.AllWorldObjects.OfType<Settlement>())
             {
-                if (factionBase.Faction == Faction.OfPlayer) continue;
-                int distance = Find.WorldGrid.ApproxDistanceInTiles(tile, factionBase.Tile);
+                if (settlement.Faction == Faction.OfPlayer) continue;
+
+                float distance = Find.WorldGrid.ApproxDistanceInTiles(tile, settlement.Tile);
                 if (distance > 0)
                 {
                     locationFactor += 200f / distance;
                 }
             }
             return locationFactor;
+        }
+        // ADICIONE ESTE NOVO MÉTODO
+        public static float GetCurrentColonyVisibility()
+        {
+            // Acessa o GameComponent e retorna a pontuação de visibilidade atual
+            return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
         }
     }
 }
