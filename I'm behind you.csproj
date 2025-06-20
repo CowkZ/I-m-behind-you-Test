@@ -51,7 +51,9 @@
   <ItemGroup>
     <Compile Include="HistoryAutoRecorderWorker_Visibility.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Patch_BetterCaravans.cs" />
     <Compile Include="Patch_Page_SelectStartingSite.cs" />
+    <Compile Include="Patch_PositiveIncidents.cs" />
     <Compile Include="Patch_Raids.cs" />
     <Compile Include="Patch_ThreatPoints.cs" />
     <Compile Include="Patch_Traders.cs" />

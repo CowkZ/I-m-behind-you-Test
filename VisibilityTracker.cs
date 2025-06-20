@@ -18,51 +18,56 @@ namespace Im_behind_you
         {
             if (Find.TickManager.TicksGame > 1 && Find.TickManager.TicksGame % 2000 == 0)
             {
+                // O nome do método está correto agora
                 RecalculateVisibility();
             }
         }
 
+        // A nova lógica de balanceamento está aqui dentro
         private void RecalculateVisibility()
         {
             if (Current.Game.CurrentMap == null) return;
 
-            if (startingLocationFactor < 0f)
-            {
-                CalculateStartingLocationFactor();
-            }
-
-            // --- NOVA FÓRMULA HÍBRIDA ---
-
-            // 1. Pega os pontos de ameaça vanilla como base
-            float vanillaThreatPoints = StorytellerUtility.DefaultThreatPointsNow(Current.Game.CurrentMap);
-
-            // 2. Calcula o "Momentum" da riqueza (bônus/penalidade por mudança recente)
-            float wealthMomentumFactor = 0f;
             float currentWealth = Current.Game.CurrentMap.wealthWatcher.WealthTotal;
-            if (lastCheckedWealth > 0)
+
+            if (lastCheckedWealth < 0f)
             {
-                float wealthChange = currentWealth - lastCheckedWealth;
-                // A mudança de riqueza agora tem um impacto muito menor, servindo como um ajuste fino.
-                wealthMomentumFactor = wealthChange / 2000f;
+                InitializeVisibility();
+                lastCheckedWealth = currentWealth;
+                return;
             }
 
-            // 3. O score final é a Base + Localização + Momentum
-            this.visibilityScore = vanillaThreatPoints + startingLocationFactor + wealthMomentumFactor;
+            // --- LÓGICA DE BALANCEAMENTO CORRIGIDA ---
 
-            // Garante que a visibilidade não seja negativa
-            if (this.visibilityScore < 0) this.visibilityScore = 0;
+            float wealthChange = currentWealth - lastCheckedWealth;
+            float wealthChangeThreshold = 200f;
+            float increaseFactor = 1000f;
+            float decreaseFactor = 500;
 
-            // Atualiza a última riqueza checada para o próximo ciclo
+            if (wealthChange > wealthChangeThreshold)
+            {
+                float visibilityIncrease = wealthChange / increaseFactor;
+                visibilityScore += visibilityIncrease;
+            }
+            else if (wealthChange < -wealthChangeThreshold)
+            {
+                float visibilityDecrease = wealthChange / decreaseFactor;
+                visibilityScore += visibilityDecrease;
+                if (visibilityScore < 10) visibilityScore = 10;
+            }
+
             lastCheckedWealth = currentWealth;
         }
 
-        private void CalculateStartingLocationFactor()
+        private void InitializeVisibility()
         {
             int playerTile = Current.Game.CurrentMap.Tile;
             startingLocationFactor = 10f;
             var nearbySettlements = Find.WorldObjects.AllWorldObjects.OfType<Settlement>()
                 .Where(s => s.Faction != Faction.OfPlayer && Find.WorldGrid.ApproxDistanceInTiles(playerTile, s.Tile) < 30);
             startingLocationFactor += nearbySettlements.Count() * 10f;
+
+            visibilityScore = startingLocationFactor;
         }
 
         public override void ExposeData()
