@@ -7,8 +7,9 @@ namespace Im_behind_you
     {
         public override float PullRecord()
         {
-            // Voltamos a pegar o valor real do nosso GameComponent
-            return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
+            float valueToRecord = Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f; // Valor de erro
+            Log.Message($"[I'm behind you] GRÁFICO PUXOU VALOR: O valor que o gráfico está recebendo é {valueToRecord}");
+            return valueToRecord;
         }
     }
 }

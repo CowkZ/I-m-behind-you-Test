@@ -6,28 +6,26 @@ using System;
 
 namespace Im_behind_you
 {
-    // Usando a forma mais explícita para garantir que o Harmony encontre o método
-    [HarmonyPatch(typeof(Page_SelectStartingSite))]
-    [HarmonyPatch("DoWindowContents")]
-    [HarmonyPatch(new Type[] { typeof(Rect) })]
+    [HarmonyPatch(typeof(Page_SelectStartingSite), "DoWindowContents")]
     public static class Patch_Page_SelectStartingSite_DoWindowContents
     {
         public static void Postfix(Rect rect)
         {
-            // Log para confirmar que o patch está rodando
-            Log.Message("[I'm behind you] DEBUG: Patch da tela de mundo foi EXECUTADO.");
-
             int selectedTile = Find.World.UI.SelectedTile;
             if (selectedTile < 0) return;
 
             float visibility = VisibilityCalculator.CalculateBaseTileVisibility(selectedTile);
-            string visibilityText = $"Visibilidade Inicial: {visibility:F2}";
+            string visibilityText = $"Visibilidade Inicial: {visibility:F0}";
 
-            Rect testRect = new Rect(15f, 215f, 300f, 30f);
+            float yPosition = 238f;
+
+            Rect textRect = new Rect(15f, yPosition, 200f, 30f);
 
             Text.Font = GameFont.Small;
             GUI.color = Color.white;
-            Widgets.Label(testRect, visibilityText);
+            TooltipHandler.TipRegion(textRect, "A visibilidade inicial da sua colônia. Afeta a frequência de eventos bons e ruins. Influenciada pela proximidade de outras facções.");
+
+            Widgets.Label(textRect, visibilityText);
             GUI.color = Color.white;
         }
     }

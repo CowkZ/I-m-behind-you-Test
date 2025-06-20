@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <HistoryAutoRecorderDef>
-    <defName>Mood_NossoTeste</defName>
-    <label>Humor (Nosso Teste)</label>
-    <graphColor>(0.2, 0.8, 0.8)</graphColor> <workerClass>RimWorld.HistoryAutoRecorderWorker_ColonistMood</workerClass>
+    <defName>Visibility</defName>
+    <label>Visibilidade</label>
+    <graphColor>(0.8, 0.8, 0.2)</graphColor>
+    <workerClass>Im_behind_you.HistoryAutoRecorderWorker_Visibility</workerClass>
+    <valueFormat>{0:F0}</valueFormat>
+
+    <recordTicksFrequency>15000</recordTicksFrequency>
+
   </HistoryAutoRecorderDef>
 </Defs>

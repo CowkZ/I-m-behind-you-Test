@@ -1,5 +1,4 @@
-﻿using I_m_behind_you;
-using RimWorld;
+﻿using RimWorld;
 using RimWorld.Planet;
 using System.Linq;
 using Verse;
@@ -10,21 +9,20 @@ namespace Im_behind_you
     {
         public static float CalculateBaseTileVisibility(int tile)
         {
-            float locationFactor = 0f;
+            // Valor inicial base
+            float baseVisibility = 10f;
 
-            foreach (var settlement in Find.WorldObjects.AllWorldObjects.OfType<Settlement>())
-            {
-                if (settlement.Faction == Faction.OfPlayer) continue;
+            // Encontra assentamentos em um raio de 30 células
+            var nearbySettlements = Find.WorldObjects.AllWorldObjects.OfType<Settlement>()
+                .Where(s => s.Faction != Faction.OfPlayer && Find.WorldGrid.ApproxDistanceInTiles(tile, s.Tile) < 30);
 
-                float distance = Find.WorldGrid.ApproxDistanceInTiles(tile, settlement.Tile);
-                if (distance > 0)
-                {
-                    locationFactor += 200f / distance;
-                }
-            }
-            return locationFactor;
+            // Adiciona +10 para cada um
+            baseVisibility += nearbySettlements.Count() * 10f;
+
+            return baseVisibility;
         }
 
+        // ... seu outro método GetCurrentColonyVisibility() continua aqui ...
         public static float GetCurrentColonyVisibility()
         {
             return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
