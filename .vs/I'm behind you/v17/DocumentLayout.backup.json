@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "E:\\Projetos Visual stduio\\I-m-behind-you\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\patch_positiveincidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_positiveincidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\patch_bettercaravans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_bettercaravans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\patch_positiveincidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_positiveincidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\visibilitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:visibilitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\patch_threatpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:patch_traders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\visibilitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:visibilitytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\visibilitycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:visibilitycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|e:\\projetos visual stduio\\i-m-behind-you\\historyautorecorderworker_visibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:historyautorecorderworker_visibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|E:\\Projetos Visual stduio\\I-m-behind-you\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4556E8B-AC27-4173-A1D1-3F286A57A2BA}|I\u0027m behind you.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,33 +58,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Patch_BetterCaravans.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_BetterCaravans.cs",
               "RelativeDocumentMoniker": "Patch_BetterCaravans.cs",
               "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_BetterCaravans.cs",
               "RelativeToolTip": "Patch_BetterCaravans.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T20:53:36.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Patch_PositiveIncidents.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_PositiveIncidents.cs",
               "RelativeDocumentMoniker": "Patch_PositiveIncidents.cs",
               "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_PositiveIncidents.cs",
               "RelativeToolTip": "Patch_PositiveIncidents.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCYAAAB8AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAB8AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T20:35:37.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Patch_ThreatPoints.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_ThreatPoints.cs",
               "RelativeDocumentMoniker": "Patch_ThreatPoints.cs",
@@ -97,33 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HistoryAutoRecorderWorker_Visibility.cs",
-              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\HistoryAutoRecorderWorker_Visibility.cs",
-              "RelativeDocumentMoniker": "HistoryAutoRecorderWorker_Visibility.cs",
-              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\HistoryAutoRecorderWorker_Visibility.cs",
-              "RelativeToolTip": "HistoryAutoRecorderWorker_Visibility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:20:32.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Main.cs",
-              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T20:21:53.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "VisibilityCalculator.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityCalculator.cs",
               "RelativeDocumentMoniker": "VisibilityCalculator.cs",
@@ -136,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Patch_Page_SelectStartingSite.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Page_SelectStartingSite.cs",
               "RelativeDocumentMoniker": "Patch_Page_SelectStartingSite.cs",
@@ -149,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Patch_Traders.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Traders.cs",
               "RelativeDocumentMoniker": "Patch_Traders.cs",
@@ -163,6 +137,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "VisibilityTracker.cs",
+              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityTracker.cs",
+              "RelativeDocumentMoniker": "VisibilityTracker.cs",
+              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityTracker.cs",
+              "RelativeToolTip": "VisibilityTracker.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwB4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:38:36.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs",
+              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:21:53.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HistoryAutoRecorderWorker_Visibility.cs",
+              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\HistoryAutoRecorderWorker_Visibility.cs",
+              "RelativeDocumentMoniker": "HistoryAutoRecorderWorker_Visibility.cs",
+              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\HistoryAutoRecorderWorker_Visibility.cs",
+              "RelativeToolTip": "HistoryAutoRecorderWorker_Visibility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:20:32.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Patch_Raids.cs",
               "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\Patch_Raids.cs",
               "RelativeDocumentMoniker": "Patch_Raids.cs",
@@ -171,19 +184,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T16:39:54.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VisibilityTracker.cs",
-              "DocumentMoniker": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityTracker.cs",
-              "RelativeDocumentMoniker": "VisibilityTracker.cs",
-              "ToolTip": "E:\\Projetos Visual stduio\\I-m-behind-you\\VisibilityTracker.cs",
-              "RelativeToolTip": "VisibilityTracker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:38:36.004Z",
               "EditorCaption": ""
             },
             {

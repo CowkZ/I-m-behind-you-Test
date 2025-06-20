@@ -4,44 +4,40 @@ using Verse;
 
 namespace Im_behind_you
 {
-    // O alvo do nosso patch é o método que calcula a quantidade de prata de uma caravana
-    [HarmonyPatch(typeof(TraderCaravanUtility), "GetTraderCaravanSilver")]
+    // O alvo do patch agora é a CLASSE-MÃE, onde o método é originalmente definido
+    [HarmonyPatch(typeof(IncidentWorker), "TryExecuteWorker")]
     public static class Patch_BetterCaravans
     {
-        // Usamos um Postfix para modificar o valor DEPOIS que o jogo já o calculou
-        public static void Postfix(Map map, ref float __result)
+        // Usamos um Prefix para modificar os parâmetros ANTES do método original rodar.
+        // '__instance' nos permite ver qual tipo de evento está acontecendo.
+        // 'ref IncidentParms parms' nos permite alterar o orçamento do evento.
+        public static void Prefix(IncidentWorker __instance, ref IncidentParms parms)
         {
-            // Se o valor original for zero, não fazemos nada
-            if (__result <= 0) return;
-
-            var visibilityTracker = Current.Game.GetComponent<VisibilityTracker>();
-            if (visibilityTracker == null) return;
-
-            // --- LÓGICA DE BÔNUS AUTO-BALANCEADA ---
-
-            // 1. Pega a Visibilidade atual do nosso mod
-            float currentVisibility = visibilityTracker.visibilityScore;
-
-            // 2. Calcula os pontos de ameaça "normais" para a colônia. Esta é nossa base.
-            float normalThreatPoints = StorytellerUtility.DefaultThreatPointsNow(map);
-            if (normalThreatPoints <= 0) normalThreatPoints = 1f;
-
-            // 3. Compara a Visibilidade com o "normal" para obter uma proporção
-            float visibilityRatio = currentVisibility / normalThreatPoints;
-
-            // Se a nossa visibilidade for maior que o normal, calculamos um bônus.
-            if (visibilityRatio > 1f)
+            // Verificamos se a instância atual é a que nos interessa (caravana de comércio)
+            if (__instance is IncidentWorker_TraderCaravanArrival)
             {
-                // O bônus é a diferença da proporção, dividido por um fator para não ser forte demais.
-                // Ex: Se a visibilidade for o dobro (ratio=2.0), o bônus será de 20% (1 + (1 / 5))
-                float wealthBonusMultiplier = 1f + ((visibilityRatio - 1f) / 5f);
+                if (parms == null || parms.target == null) return;
 
-                // Log para depuração
-                Log.Message($"[I'm behind you] CARAVAN PATCH: Prata original: {__result:F0}. Visibilidade ({currentVisibility:F0}) > Ameaça ({normalThreatPoints:F0}). " +
-                            $"Bônus de Riqueza: {wealthBonusMultiplier:F2}x. Prata Final: {(__result * wealthBonusMultiplier):F0}");
+                var visibilityTracker = Current.Game.GetComponent<VisibilityTracker>();
+                if (visibilityTracker == null) return;
 
-                // Aplica o bônus à quantidade de prata final
-                __result *= wealthBonusMultiplier;
+                // --- LÓGICA DE BÔNUS AUTO-BALANCEADA ---
+                float currentVisibility = visibilityTracker.visibilityScore;
+                float normalThreatPoints = StorytellerUtility.DefaultThreatPointsNow(parms.target);
+                if (normalThreatPoints <= 0) normalThreatPoints = 1f;
+
+                float visibilityRatio = currentVisibility / normalThreatPoints;
+
+                if (visibilityRatio > 1f)
+                {
+                    float wealthBonusMultiplier = 1f + ((visibilityRatio - 1f) / 5f);
+
+                    Log.Message($"[I'm behind you] CARAVAN PATCH: Orçamento de pontos original: {parms.points:F0}. Aplicando bônus de Visibilidade de {wealthBonusMultiplier:F2}x.");
+
+                    parms.points *= wealthBonusMultiplier;
+
+                    Log.Message($"[I'm behind you] CARAVAN PATCH: Novo orçamento de pontos: {parms.points:F0}.");
+                }
             }
         }
     }
