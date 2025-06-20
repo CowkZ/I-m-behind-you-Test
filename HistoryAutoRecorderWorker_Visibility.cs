@@ -7,8 +7,8 @@ namespace Im_behind_you
     {
         public override float PullRecord()
         {
-            // VAMOS IGNORAR O CÁLCULO REAL E RETORNAR UM NÚMERO GIGANTE APENAS PARA O TESTE
-            return 50000f; // Retorna um valor fixo de 50,000
+            // Voltamos a pegar o valor real do nosso GameComponent
+            return Current.Game.GetComponent<VisibilityTracker>()?.visibilityScore ?? 0f;
         }
     }
 }
