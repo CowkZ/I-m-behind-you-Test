@@ -10,35 +10,20 @@ namespace Im_behind_you
     {
         public static void Postfix(ref float __result)
         {
-            // Se os pontos originais forem muito baixos, não fazemos nada.
-            if (__result <= 0) return;
-
             var visibilityTracker = Current.Game.GetComponent<VisibilityTracker>();
-            if (visibilityTracker == null) return;
+            if (visibilityTracker == null || visibilityTracker.visibilityScore <= 0) return;
 
-            // --- NOVA LÓGICA AUTO-BALANCEADA ---
+            // Guarda o valor original para mostrar no log
+            float originalPoints = __result;
 
-            // 1. Pegamos os pontos de ameaça que o jogo calculou. Este é nosso "normal".
-            float vanillaThreatPoints = __result;
+            // Pega o nosso valor de visibilidade já calculado
+            float finalVisibilityScore = visibilityTracker.visibilityScore;
 
-            // 2. Pegamos a nossa pontuação de Visibilidade.
-            float currentVisibility = visibilityTracker.visibilityScore;
+            // Log para vermos a substituição acontecendo
+            Log.Message($"[I'm behind you] RAID PATCH: Pontos vanilla eram {originalPoints:F0}. Substituído pela Visibilidade de {finalVisibilityScore:F0}.");
 
-            // 3. Calculamos o multiplicador com base na proporção entre os dois.
-            // Se a visibilidade for igual aos pontos de ameaça, o multiplicador será 1.0x.
-            float visibilityMultiplier = currentVisibility / vanillaThreatPoints;
-
-            // Garante que o multiplicador não seja baixo demais (ex: mínimo de 10% de dificuldade)
-            visibilityMultiplier = Mathf.Max(0.10f, visibilityMultiplier);
-
-            // Log de DEBUG para vermos a nova mágica acontecer
-            Log.Message($"[I'm behind you] RAID POINTS: Pontos Vanilla: {vanillaThreatPoints:F0}, " +
-                        $"Visibilidade Atual: {currentVisibility:F0}, " +
-                        $"Multiplicador Final: {visibilityMultiplier:F2}x, " +
-                        $"Pontos Finais: {(__result * visibilityMultiplier):F0}");
-
-            // 4. Aplica nosso novo multiplicador ao resultado final
-            __result *= visibilityMultiplier;
+            // Substituímos o resultado final pelo nosso valor
+            __result = finalVisibilityScore;
         }
     }
 }
