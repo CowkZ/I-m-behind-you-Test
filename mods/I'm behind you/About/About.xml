@@ -20,8 +20,4 @@ Play as a true isolationist or feel the effects of being the center of the world
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
     </modDependencies>
-    <loadFolders>
-        <li>Common</li>
-        <li>1.6</li>
-    </loadFolders>
 </ModMetaData>
